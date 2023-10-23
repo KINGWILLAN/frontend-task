@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+#great h3 {
+  margin-top: 5px;
+}
+
+p {
+  font-size: 18px;
+}
+
+#main--content--container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@media screen and (min-width: 840px) {
+  #main--content--container {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    flex-direction: row;
+    border-radius: 20px;
+  }
+}
+
+#blue--background--container {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+  text-align: center;
+  color: yellow;
+  display: grid;
+  place-items: center;
+}
+
+#blue--background--container > p {
+  color: hsl(241, 100%, 92%);
+  font-weight: 900;
+}
+
+@media screen and (min-width: 840px) {
+  #blue--background--container {
+    max-width: 300px;
+    border-radius: 20px;
+  }
+}
+
+#total--score {
+  border-radius: 120%;
+  background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  border-radius: 100%;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#total--score h1 {
+  font-size: 45px;
+}
+#total--score p {
+  color: hsl(0, 0%, 100%);
+}
+
+#great {
+  text-align: center;
+}
+
+#great h2 {
+  color: white;
+}
+#great p {
+  color: hsl(241, 100%, 92%);
+}
+
+/* white-background-container  */
+
+#white-background-container {
+  padding-inline: 20px;
+}
+
+@media screen and (min-width: 840px) {
+  #white-background-container {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 25px;
+  }
+}
+
+#white-background-container > p {
+  color: black;
+  font-weight: 700;
+}
+
+#summary-score-container {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.summary-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  gap: 60px;
+}
+
+#icon-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+#reaction-items,
+#memory,
+#verbal,
+#visual {
+  padding: 3px 10px 3px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  border: 2px;
+  border-radius: 10px;
+}
+
+#reaction {
+  background-color: hsl(0, 100%, 98%);
+  color: hsl(0, 100%, 57%);
+}
+
+#memory-bg {
+  background-color: hsl(39, 100%, 98%);
+  color: hsl(39, 100%, 56%);
+}
+
+#verbal-bg {
+  background-color: hsl(166, 100%, 98%);
+  color: hsl(166, 100%, 37%);
+}
+#visual-bg {
+  background-color: hsl(234, 85%, 98%);
+  color: hsl(234, 87%, 34%);
+}
+.spans {
+  color: black;
+}
+#summary-score-container {
+  margin-top: 23px;
+  margin-top: 20px;
+  row-gap: 25px;
+}
+
+#continue--btn {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 25px;
+  color: white;
+  font-weight: 800;
+  background-color: hsl(224, 30%, 47%);
+  border: none;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#continue--btn:hover {
+  background-color: hsl(241, 81%, 54%);
+  cursor: pointer;
+}
